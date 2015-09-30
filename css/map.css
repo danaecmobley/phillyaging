@@ -3,7 +3,11 @@
     height: 25px;
 }
 
-#map {
+#map-page {
+	height:800px;
+}
+
+#map{
 	height:700px;
 }
 
@@ -33,4 +37,4 @@ p{
 	height: 5px;
 	border: white 1px solid;
 	padding-right: 5px;
-  }
+ }
