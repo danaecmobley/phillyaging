@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="">
-    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,77 +10,85 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <!--referenced stylesheets - Bootstrap, Leaflet, and custom stlyes-->
+        <!--referenced stylesheets-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/map.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        <!-- Optional theme - Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-        <!--referenced scripts- JQuery and Typekit-->
+        <!--referenced scripts - JQuery and Leaflet-->
         <script src="//use.typekit.net/yci0sng.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        </head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>   
+        <script src="js/map.js"></script>
+    </head>
     
-    <body>
-      
+    <body> 
     <!--navigation bar-->
-    <nav class="navbar navbar-default">
+    <!--<nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
+       <!-- <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">
-              <img src="images/hamburger_icon.png" id= "maplogo" alt=rocking chair>
-          </a>
-     </div> 
+          <a class="navbar-brand" href="index.html"><img src="images/hamburger_icon.png" id= "maplogo" alt=navigation dropdown></a>         
+        </div>
 
-        <!--nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li id="webtitle"><a href="map.html">AGING OUT OF PLACE<span class="sr-only">(current)</span></a></li>
+            <li id="webtitle"><a href="#">Philly Aging<span class="sr-only">(current)</span></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>
-    <!--END of navigation bar-->
-
-    <!--text for home page -->
-    <div class="jumbotron">
+    </nav> <!--
+    -->
+<!------------------------------------
+-------------------------------------
+Project Intro Section
+-------------------------------------->
+   <div class="jumbotron">
       <div class="container">
-        <h1>AGING OUT OF PLACE</h1>
+        <h1>PHILLY AGING</h1>
         <p>How have emerging development trends in Philadelphia impacted access to services and resources for the elderly population?</p>
         <h3 id="view_map"><a href="map.html">View the Map</a></h3>
       </div>
     </div> 
-    
-    <div class="about_project">
-      <h4> About the Project </h4>
-        <p>As a “city of neighborhoods”, much of Philadelphia’s culture has been established by long term residents. As the city has finally begun to see a population increase, attention has been focused on the influx of millennials and young families living in (or returning to) Philadelphia. However, less analysis has been completed to determine how these current trends have impacted (or will soon impact) the city’s elderly population. </p></br>
-       
-        <p>Currently, Philadelphia ranks 12th in the nation among areas experiencing a boom in gentrification. Growth in Philadelphia has not been widespread and is limited mostly to only a few select neighborhoods, such as West, South and Lower North Philadelphia. Anecdotally, many have claimed that new development is displacing low-income and elderly residents, so this project seeks to examine what geographic patterns exists.</p></br>
 
-        <p>For the purpose of this analysis, individuals over 65 years of age will be classified as elderly. The project will highlight where concentrations of elderly people reside in the city (based off 2013 ACS estimates) and overlay locations of related resources, such as health centers and transportation. </p></br>
+<!------------------------------------>
 
-      <h4>Data Sources</h4>
-        <p>The following data sources were used for this project:</p>
-          <ul>
-              <li><a href="http://www.census.gov/main/www/cen2000.html">2000 and 2010 US Census Data</a></li>
-              <li><a href="https://www.census.gov/programs-surveys/acs/data.html">2013 American Communities Survey</a></li>
-              <li><a href="http://www.governing.com/gov-data/philadelphia-gentrification-maps-demographic-data.html">Governing - Philadelphia Gentrification Maps</a></li>
-              <li><a href="http://www.pewforum.org/datasets/survey-of-aging-and-longevity">Pew Research Center Survey on Aging and Longevity (2013)</a></li>
-              <li><a href="http://phillyaffordablecommunities.org/wp-content/uploads/2015/03/DWD_Report.pdf">PCAC Development Without Displacement Report</a></li>
-          </ul>
-       <p>This exercise is not affiliated with any of the data sources listed above.</p></br>
+    <!--sidebar with map and project description-->
+    <div id="map-page">
+        <!--<p>eat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>-->
 
-        <p> <b>Note:</b> This project was completed as a part of the <a href="https://codeforphilly.org/blog/open_source_mentorship_program_2015">2015 Open Source Mentorship Program </a> - a collaborative summer program that gives women a crash course in open source and a chance to get hands-on project experience in civic tech. </p> </br>
-        <img src="images/osmp_logo.png" id="osmp_logo">
-        <img src="images/gdi_logo_badge.png" id="gdi_logo">
-        <img src="images/code_for_philly_logo.png" id="cfp_logo">
-    </div>
+        <div class="col-md-2" id="project_sidebar"> 
+            <h5>Population over 65 years old</h5>
+                <p>Philadelphia average = 12.1%</p>
+                <p> <img src="images/feebe2.png"> less than 5%</p>
+                <p> <img src="images/fbb4b9.png"> 5-12%</p>
+                <p> <img src="images/f768a1.png"> 12-16%</p>
+                <p> <img src="images/c51b8a.png"> 17-24%</p>
+                <p> <img src="images/7a0177.png"> greater than 25%</p>
+            
+            <h5>Health</h5> 
+                <p> <img src="images/health_center_icon.png">Health Centers</p>
+                <p><img src="images/health_center_circle.png">Older Adult Centers</p>  
+                
+            <h5>Food Access</h5> 
+                <p><img src="images/farmers_market_circle.png">Farmer's Markets</p>
+        </div>
+        <!--Leaflet Map Section-->
+        <div class="col-md-9" id="map"></div>
+        <script src="js/map.js"></script>   
+        <!--inserted MapBox tiles-->
+        <!--end Leaflet Map section-->
     </body>
 </html>
