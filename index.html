@@ -9,13 +9,16 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'> <!--Oswald-->
 
         <!--referenced stylesheets-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/map.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-         
+        
         <!-- Optional theme - Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
@@ -55,7 +58,7 @@
 -------------------------------------
 Project Intro Section
 -------------------------------------->
-   <div class="jumbotron">
+  <!-- <div class="jumbotron">
       <div class="container">
         <h1>PHILLY AGING</h1>
         <p>How have emerging development trends in Philadelphia impacted access to services and resources for the elderly population?</p>
@@ -66,27 +69,29 @@ Project Intro Section
 <!------------------------------------>
 
     <!--sidebar with map and project description-->
-    <div id="map-page">
+   <!-- <div id="map-page">
         <!--<p>eat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>-->
 
-        <div class="col-md-2" id="project_sidebar"> 
+        <div class="col-md-4" id="project_sidebar"> 
+            <h3>Philly Aging</h3>
+            <p>How have emerging trends in Philadelphia impacted access to services and resources for the elderly population?</p>
             <h5>Population over 65 years old</h5>
-                <p>Philadelphia average = 12.1%</p>
-                <p> <img src="images/feebe2.png"> less than 5%</p>
-                <p> <img src="images/fbb4b9.png"> 5-12%</p>
-                <p> <img src="images/f768a1.png"> 12-16%</p>
-                <p> <img src="images/c51b8a.png"> 17-24%</p>
-                <p> <img src="images/7a0177.png"> greater than 25%</p>
+                <p class="key-item">Philadelphia average = 12.1%</p>
+                <p class="key-item"> <img src="images/feebe2.png"> <5%</p>
+                <p class="key-item"> <img src="images/fbb4b9.png"> 5-12%</p>
+                <p class="key-item"> <img src="images/f768a1.png"> 12-16%</p>
+                <p class="key-item"> <img src="images/c51b8a.png"> 17-24%</p>
+                <p class="key-item"> <img src="images/7a0177.png"> >25%</p>
             
             <h5>Health</h5> 
-                <p> <img src="images/health_center_icon.png">Health Centers</p>
-                <p><img src="images/health_center_circle.png">Older Adult Centers</p>  
+                <p class="key-item"> <img src="images/health_center_icon.png">Health Centers</p>
+                <p class="key-item"><img src="images/health_center_circle.png">Older Adult Centers</p>  
                 
             <h5>Food Access</h5> 
-                <p><img src="images/farmers_market_circle.png">Farmer's Markets</p>
+                <p class="key-item"><img src="images/farmers_market_circle.png">Farmer's Markets</p>
         </div>
         <!--Leaflet Map Section-->
-        <div class="col-md-9" id="map"></div>
+        <div class="col-md-8" id="map"></div>
         <script src="js/map.js"></script>   
         <!--inserted MapBox tiles-->
         <!--end Leaflet Map section-->
