@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="css/map.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
         
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    
         <!-- Optional theme - Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
@@ -51,25 +54,10 @@
       </div><!-- /.container-fluid -->
     </nav> <!--
     -->
-<!------------------------------------
--------------------------------------
-Project Intro Section
--------------------------------------->
-   <div class="jumbotron">
-      <div class="container">
-        <h1>PHILLY AGING</h1>
-        <p>How have emerging development trends in Philadelphia impacted access to services and resources for the elderly population?</p>
-        <h3 id="view_map"><a href="map.html">View the Map</a></h3>
-      </div>
-    </div> 
-
-<!------------------------------------>
-
     <!--sidebar with map and project description-->
-    <div id="map-page">
         <!--<p>eat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>-->
 
-        <div class="col-md-2" id="project_sidebar"> 
+        <div class="col-sm-5" id="project_sidebar"> 
             <h5>Population over 65 years old</h5>
                 <p>Philadelphia average = 12.1%</p>
                 <p> <img src="images/feebe2.png"> less than 5%</p>
@@ -86,8 +74,9 @@ Project Intro Section
                 <p><img src="images/farmers_market_circle.png">Farmer's Markets</p>
         </div>
         <!--Leaflet Map Section-->
-        <div class="col-md-9" id="map"></div>
-        <script src="js/map.js"></script>   
+        <div class="col-sm-7" id="map"></div>
+    
+    <script src="js/map.js"></script>  
         <!--inserted MapBox tiles-->
         <!--end Leaflet Map section-->
     </body>

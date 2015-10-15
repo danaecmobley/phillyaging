@@ -272,7 +272,7 @@ textarea {
 }
 
 #webtitle {
-    font-family: "trumpgothicpro",sans-serif;
+    font-family:'Oswald',sans-serif;
     font-size: 28px;
     color: #FFFFFF;
 }
@@ -292,14 +292,14 @@ textarea {
   color: #FFFFFF;
   font-weight: 400;  
   font-size: 150px;
-  font-family: "trumpgothicpro",sans-serif;
+  font-family: 'Oswald',sans-serif;
   text-align: center;
   padding-top: 20px;
 }
 
 .jumbotron p {
     color: black;
-    font-family: sans-serif;
+    font-family: 'Oswald',sans-serif;
     font-size: 24px;
     padding-left: 200px;
     padding-right: 200px;
@@ -341,7 +341,7 @@ textarea {
 }
 
 h4{
-  font-family: "trumpgothicpro", sans-serif;
+  font-family: 'Oswald','trumpgothicpro', sans-serif;
   font-size: 36px;
   font-weight: bold;
   text-align: left;
