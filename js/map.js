@@ -47,8 +47,9 @@ var map = L.map('map').setView([39.9673, -75.2436], 12);
                     pointToLayer: function(featureData, latlng) {            
 
                         markerOptions = {
-                            color: '#54FF1E',
-                            fillOpacity: 0.9,
+                            color: '#187b04',
+                            fillOpacity: 0.6,
+                            radius:10,
                             };
                         
                         return L.circleMarker(latlng, markerOptions);
@@ -73,7 +74,8 @@ var map = L.map('map').setView([39.9673, -75.2436], 12);
 
                         markerOptions = {
                             color: '#FFBA1E',
-                            fillOpacity: 0.8,
+                            fillOpacity: 0.3,
+                            radius:25,
                             };
                         return L.circleMarker(latlng, markerOptions);
                         },
@@ -97,7 +99,8 @@ var map = L.map('map').setView([39.9673, -75.2436], 12);
 
                     markerOptions = {
                         color: '#1A0125',
-                        fillOpacity: 0.8,
+                        fillOpacity: 0.6,
+                        radius:5,
                         };
                     return L.circleMarker(latlng, markerOptions);
                     },

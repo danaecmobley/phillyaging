@@ -272,27 +272,16 @@ textarea {
 }
 
 #webtitle {
-    font-family: "trumpgothicpro",sans-serif;
+    font-family: 'Oswald',sans-serif;
     font-size: 28px;
     color: #FFFFFF;
-}
-
-.jumbotron {
-  background-image: url(../images/elderly_man_smiing.jpeg);
-  height: 700px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.jumbotron .container {
-  position: relative;
 }
 
 .jumbotron h1 {  
   color: #FFFFFF;
   font-weight: 400;  
   font-size: 150px;
-  font-family: "trumpgothicpro",sans-serif;
+  font-family: 'Oswald',sans-serif;
   text-align: center;
   padding-top: 20px;
 }
@@ -340,13 +329,19 @@ textarea {
   text-align: left;
 }
 
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: left;
+}
+
 h4{
-  font-family: "trumpgothicpro", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 36px;
   font-weight: bold;
   text-align: left;
   padding: 40px 0px 20px 0px;
-  text-transform: uppercase;
 }
 
 li{
@@ -356,19 +351,7 @@ li{
   color: #000000;
 }
 
-#osmp_logo {
-  width: 90px;
-  height: 80px;
-}
-#gdi_logo {
-  width: 80px;
-  height: 80px;
-}
 
-#cfp_logo{
-  width: 60px;
-  height: 100px;
-}
 
 
 
