@@ -9,6 +9,9 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        
+        <!--fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'> <!--Oswald-->
 
         <!--referenced stylesheets-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -29,66 +32,37 @@
     
     <body> 
     <!--navigation bar-->
-    <!--<nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-       <!-- <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><img src="images/hamburger_icon.png" id= "maplogo" alt=navigation dropdown></a>         
-        </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li id="webtitle"><a href="#">Philly Aging<span class="sr-only">(current)</span></a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav> <!--
-    -->
 <!------------------------------------
 -------------------------------------
 Project Intro Section
 -------------------------------------->
-   <div class="jumbotron">
-      <div class="container">
-        <h1>PHILLY AGING</h1>
-        <p>How have emerging development trends in Philadelphia impacted access to services and resources for the elderly population?</p>
-        <h3 id="view_map"><a href="map.html">View the Map</a></h3>
-      </div>
-    </div> 
 
-<!------------------------------------>
 
-    <!--sidebar with map and project description-->
-    <div id="map-page">
-        <!--<p>eat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>-->
-
-        <div class="col-md-2" id="project_sidebar"> 
+    <!--START Left Sidebar-->
+        <div class="col-md-4" id="project_sidebar"> 
+            <h3>Philly Aging</h3>
+            <p>How have emerging trends in Philadelphia impacted access to services and resources for the elderly population?</p>
             <h5>Population over 65 years old</h5>
-                <p>Philadelphia average = 12.1%</p>
-                <p> <img src="images/feebe2.png"> less than 5%</p>
-                <p> <img src="images/fbb4b9.png"> 5-12%</p>
-                <p> <img src="images/f768a1.png"> 12-16%</p>
-                <p> <img src="images/c51b8a.png"> 17-24%</p>
-                <p> <img src="images/7a0177.png"> greater than 25%</p>
-            
+                <p class="key-item">Philadelphia average = 12.1%</p>
+                <p class="key-item"> <img src="images/feebe2.png"> <5%</p>
+                <p class="key-item"> <img src="images/fbb4b9.png"> 5-12%</p>
+                <p class="key-item"> <img src="images/f768a1.png"> 12-16%</p>
+                <p class="key-item"> <img src="images/c51b8a.png"> 17-24%</p>
+                <p class="key-item"> <img src="images/7a0177.png"> >25%</p>
+                    
             <h5>Health</h5> 
-                <p> <img src="images/health_center_icon.png">Health Centers</p>
-                <p><img src="images/health_center_circle.png">Older Adult Centers</p>  
-                
+                <p class="key-item"> <img src="images/health_center_icon.png">Health Centers</p>
+                <p class="key-item"><img src="images/health_center_circle.png">Older Adult Centers</p>  
+                        
             <h5>Food Access</h5> 
-                <p><img src="images/farmers_market_circle.png">Farmer's Markets</p>
+                <p class="key-item"><img src="images/farmers_market_circle.png">Farmer's Markets</p>
         </div>
-        <!--Leaflet Map Section-->
-        <div class="col-md-9" id="map"></div>
+    <!--END Left Sidebar-->
+
+    <!--START Leaflet Map Section-->
+        <div class="col-md-8" id="map"></div>
         <script src="js/map.js"></script>   
         <!--inserted MapBox tiles-->
-        <!--end Leaflet Map section-->
+    <!--END Leaflet Map section-->
     </body>
 </html>
