@@ -277,17 +277,6 @@ textarea {
     color: #FFFFFF;
 }
 
-.jumbotron {
-  background-image: url(../images/elderly_man_smiing.jpeg);
-  height: 700px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.jumbotron .container {
-  position: relative;
-}
-
 .jumbotron h1 {  
   color: #FFFFFF;
   font-weight: 400;  

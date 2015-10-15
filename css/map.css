@@ -1,14 +1,9 @@
-#maplogo {
-    width: 25px;
-    height: 25px;
-}
-
-#map-page {
-	height:800px;
+#project-sidebar {
+	height:600px;
 }
 
 #map{
-	height:700px;
+	height:800px;
 }
 
 /*#project_sidebar {
@@ -21,14 +16,15 @@
 
 h5{
   font-family: 'Oswald', sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   padding-top: 10px;
 }
 
 p{
     color:#000000;
-    font-family: , 'Oswald', sans-serif;
-    font-size: 16px;
+    font-family:'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
     text-align: left;
 }
 
@@ -47,3 +43,5 @@ p{
     font-weight: 300;
     padding-left: 10px;
  }
+
+

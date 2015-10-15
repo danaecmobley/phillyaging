@@ -423,18 +423,3 @@ th {
   padding: 0;
 }
 
-.home {
-  height:700px;
-  border: 1px solid black;
-  /*syntax for full screen background image */
-   background: url(images/elderly_couple.jpg) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-   background-size: cover;
-}
-
-h1 {
-  color: black;
-  font-size: 100px;
-   }
